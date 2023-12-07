@@ -8,7 +8,7 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.boxesOne {
+.boxes {
 	margin: 20px;
 	display: grid;
 	grid-template-columns: 100px 100px 100px;
@@ -21,4 +21,77 @@ body {
 	background-color: royalblue;
 	padding: 20px;
 	text-align: center;
+}
+
+.boxesTwo .box {
+	background-color: darkgray;
+}
+
+.boxesTwo .box-a {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.boxesTwo .box-b {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.boxesTwo .box-c {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.boxesTwo .box-d {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.boxesThree {
+	display: grid;
+	margin: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.boxesThree .box {
+	background-color: darkred;
+	color: white;
+}
+
+.boxesFour .box-a {
+	color: white;
+	background-color: black;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.boxesFour .box-b {
+	color: white;
+	background-color: darkred;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.boxesFour .box-c {
+	color: white;
+	background-color: darkblue;
+	grid-column: 3 / 3;
+	grid-row: 2 / 3;
+}
+
+.boxesFive .box {
+	background-color: green;
+}
+
+.boxesFive .box-a {
+	background-color: lightgreen;
+	grid-area: 2 / 3 / 2 / 2;
 }
