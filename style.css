@@ -128,3 +128,24 @@ body {
 	grid-column: col3-start;
 	grid-row: row1-start / row2-end;
 }
+
+.boxesEight {
+	grid-template-columns: repeat(4, [col] 100px);
+	grid-template-rows: repeat(3, [row] auto);
+}
+
+.boxesEight .box {
+	background-color: navy;
+	color: white;
+}
+.boxesEight .box-a {
+	grid-column: col / span 2;
+}
+.boxesEight .box-b {
+	grid-column: col 3 / span 2;
+	grid-row: row / span 2;
+}
+
+.boxesEight .box-g {
+	grid-column: col 3 / span 2;
+}
