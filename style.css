@@ -111,7 +111,7 @@ body {
 
 .boxesSeven {
 	grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px;
-	grid-template-rows: [row1-start] auto [row2-start] auto [row2-end] auto;
+	grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 }
 
 .boxesSeven .box {
