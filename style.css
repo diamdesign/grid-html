@@ -149,3 +149,51 @@ body {
 .boxesEight .box-g {
 	grid-column: col 3 / span 2;
 }
+
+.boxesNine {
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-areas:
+		"header header header"
+		"sidebar content content";
+}
+
+.boxesNine .box {
+	background-color: brown;
+	color: white;
+}
+
+.boxesNine .header {
+	grid-area: header;
+}
+
+.boxesNine .sidebar {
+	grid-area: sidebar;
+}
+
+.boxesNine .content {
+	grid-area: content;
+}
+
+.boxesTen {
+	grid-template-columns: auto;
+	grid-template-areas:
+		"header header header"
+		"sidebar content content"
+		"footer footer footer";
+}
+
+.boxesTen .header {
+	grid-area: header;
+}
+
+.boxesTen .sidebar {
+	grid-area: sidebar;
+}
+
+.boxesTen .content {
+	grid-area: content;
+}
+
+.boxesTen .footer {
+	grid-area: footer;
+}
